@@ -1,0 +1,22 @@
+{
+  "name": "Rule34.xxx",
+  "version": "1.0.0",
+  "language": "en",
+  "nsfw": true,
+  "sources": [
+    {
+      "name": "Rule34",
+      "id": "rule34xxx",
+      "type": "parser",
+      "baseUrl": "https://rule34.xxx",
+      "searchUrl": "/index.php?page=dapi&s=post&q=index&limit=20&tags={query}",
+      "responseType": "xml",
+      "mappings": {
+        "title": "tags",
+        "imageUrl": "file_url",
+        "thumbnailUrl": "preview_url"
+      }
+    }
+  ]
+}
+`
